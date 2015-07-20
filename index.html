@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lasers</title>
+    <script>
+      var playLasers = function() {
+        document.getElementById('lasers').play();
+      }
+      setInterval(playLasers, 5000);
+    </script>
+    <style>
+      body {
+        background: linear-gradient(45deg, blue, red);
+      }
+      h1 {
+        font-size: 7em;
+        color: #fff;
+        font-style: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin: auto;
+        height: 7em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lasers</h1>
+    <audio id="lasers">  
+      <source src="loop.wav">  
+    </audio>
+  </body>
+</html>
